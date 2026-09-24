@@ -2,11 +2,13 @@
 
 ## Credentials
 
-Credential file: `~/.memos`.
+Credential file: `~/.memos/config.json`.
 
-```bash
-MEMOS_URL="https://memos.example.com"
-MEMOS_API_TOKEN="<token>"
+```json
+{
+  "MEMOS_URL": "https://memos.example.com",
+  "MEMOS_API_TOKEN": "<token>"
+}
 ```
 
 Set the file permission to `600`. The scripts use this dedicated file exclusively.

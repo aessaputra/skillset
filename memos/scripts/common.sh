@@ -14,7 +14,7 @@ api_call() {
   local response_file status
   response_file="$(mktemp)"
   local args=(--silent --show-error --location --request "$method"
-    --header "Authorization: Bearer $MEMOS_API_TOKEN"
+    --header "Authorization: Bearer ${MEMOS_API_TOKEN}"
     --header "Accept: application/json")
   if [[ -n "$data" ]]; then
     args+=(--header "Content-Type: $content_type" --data "$data")

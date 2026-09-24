@@ -14,11 +14,13 @@ Read-write integration for the current Memos REST API at `/api/v1`.
 
 Requirements: a reachable Memos instance, an access token from Settings → Access Tokens, `bash`, `curl`, `jq`, `file`, and `base64`.
 
-Store credentials in the dedicated `~/.memos` file:
+Store credentials in `~/.memos/config.json`:
 
-```bash
-MEMOS_URL="https://memos.example.com"
-MEMOS_API_TOKEN="<access-token>"
+```json
+{
+  "MEMOS_URL": "https://memos.example.com",
+  "MEMOS_API_TOKEN": "<access-token>"
+}
 ```
 
 Set its permission to `600`. Never print or expose the token.

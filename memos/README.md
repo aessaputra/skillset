@@ -4,11 +4,13 @@ Self-hosted Memos integration using the latest API at `/api/v1`.
 
 ## Configuration
 
-Store the following variables in `~/.memos`:
+Store the following in `~/.memos/config.json`:
 
-```bash
-MEMOS_URL="https://memos.example.com"
-MEMOS_API_TOKEN="<access-token>"
+```json
+{
+  "MEMOS_URL": "https://memos.example.com",
+  "MEMOS_API_TOKEN": "<access-token>"
+}
 ```
 
 Set the file permission to `600`. Create the token from Settings → Access Tokens in the Memos UI.
