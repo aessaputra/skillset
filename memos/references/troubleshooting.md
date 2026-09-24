@@ -40,7 +40,7 @@ bash "$SKILL/scripts/memo-api.sh" list --limit 1
 ## Local Validation
 
 ```bash
-bash -n "$SKILL/load-env.sh" "$SKILL/scripts/"*.sh
+bash -n "$SKILL/load-config.sh" "$SKILL/scripts/"*.sh
 for s in memo-api search-api tag-api attachment-api user-api; do
   bash "$SKILL/scripts/$s.sh" --help
 done

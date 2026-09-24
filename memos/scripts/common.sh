@@ -2,8 +2,8 @@
 # Common helpers for Memos API scripts.
 
 SCRIPT_DIR="$(cd -P "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-# shellcheck source=../load-env.sh
-source "$SCRIPT_DIR/../load-env.sh"
+# shellcheck source=../load-config.sh
+source "$SCRIPT_DIR/../load-config.sh"
 load_service_credentials
 
 MEMOS_URL="${MEMOS_URL%/}"
